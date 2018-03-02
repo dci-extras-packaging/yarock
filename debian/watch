@@ -1,2 +1,2 @@
 version=4
-https://launchpad.net/yarock/1.x/(.+)/+download/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@
+https://launchpad.net/yarock/+download .*/Yarock@ANY_VERSION@_Sources@ARCHIVE_EXT@
