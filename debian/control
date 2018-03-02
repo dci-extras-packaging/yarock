@@ -1,0 +1,53 @@
+Source: yarock
+Section: sound
+Priority: extra
+Maintainer: Leszek Lesner <leszek@zevenos.com>
+Build-Depends: debhelper (>= 9.0), 
+ cmake, 
+ libqt5x11extras5-dev, 
+ libphonon4qt5-dev, 
+ libtag1-dev,
+ libechonest-dev, 
+ libqt5sql5-sqlite,
+ pkg-config,
+ libx11-dev,
+ libhtmlcxx-dev,
+ qttools5-dev,
+ qttools5-dev-tools,
+ qtbase5-dev-tools,
+ qtbase5-private-dev,
+ qtbase5-dev
+Standards-Version: 3.9.8
+Homepage: http://qt-apps.org/content/show.php/YaRock?content=129372
+
+Package: yarock
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, phonon4qt5-backend-gstreamer, libqt5sql5-sqlite
+Recommends: gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Description: a Qt based music player
+ Yarock is a music player in c++/Qt designed to provide a clean, 
+ simple and beautiful music collection based on album coverart.
+ .
+ Yarock is written in C++ using Qt and Phonon multimedia framework, only for 
+ linux platform.
+ .
+ Features include:
+ * Music collection database (SQLite 3)
+ * Browse your local music collection based on cover art 
+ * Easy search and filter music collection
+ * Manage favorites item (album, artist)
+ * Play music directly from collection or playqueue
+ * Simple Playqueue
+ * Smart playlist generator 
+ * Support mp3,Ogg Vorbis,flac music files (depending on phonon backend)
+ * Support load/save playlist file (m3u, pls, xspf)
+ * Play radio stream (icecast, shoutcast, user stream files)
+ * Mp3Gain tag support for volume normalization
+ * Cover art download (Last.fm/discogs services)
+ * Last Fm scrobbler
+ * Command line interface, Mpris interface
+ * Clean and simple user interface 
+ * No GNOME or KDE dependancies
+ .
+ http://qt-apps.org/content/show.php/YaRock?content=129372
+
