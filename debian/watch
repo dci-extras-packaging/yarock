@@ -1,2 +1,2 @@
 version=4
-https://launchpad.net/yarock/1.x/(.+)/+download/Yarock_(.+)_Sources.tar.gz
+https://launchpad.net/yarock/1.x/(.+)/+download/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@
