@@ -1,1 +1,4 @@
 phonon.patch
+rename_appstream_files.patch
+update_appstream_metadata.patch
+enable_multiarch.patch

@@ -1,0 +1,30 @@
+Description: Enable multi arch.
+Forwarded: no
+Author: Scarlett Moore <sgmoore@kde.org>
+Last-Update: 1/31/19
+
+Index: Yarock_1.3.1_Sources/CMakeLists.txt
+===================================================================
+--- Yarock_1.3.1_Sources.orig/CMakeLists.txt	2019-01-31 20:23:54.761413881 +0000
++++ Yarock_1.3.1_Sources/CMakeLists.txt	2019-02-01 11:59:35.487183302 +0000
+@@ -15,7 +15,7 @@
+ # ------------------------------------------------------------------------------
+ #ADD_DEFINITIONS( -DTEST_FLAG )
+ ADD_DEFINITIONS(-Wall -Wextra )
+-
++include(GNUInstallDirs)
+ # ------------------------------------------------------------------------------
+ #  OPTION
+ # ------------------------------------------------------------------------------
+Index: Yarock_1.3.1_Sources/src/core/player/phonon/CMakeLists.txt
+===================================================================
+--- Yarock_1.3.1_Sources.orig/src/core/player/phonon/CMakeLists.txt	2019-01-31 20:23:39.253026063 +0000
++++ Yarock_1.3.1_Sources/src/core/player/phonon/CMakeLists.txt	2019-02-01 12:32:06.652127834 +0000
+@@ -88,7 +88,7 @@
+    set (CMAKE_INSTALL_PREFIX /usr CACHE PATH "default install path" FORCE )
+ endif()
+
+-set(CMAKE_INSTALL_LIB "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}/yarock"  CACHE PATH "libraries installation path" FORCE)
++set(CMAKE_INSTALL_LIB "${CMAKE_INSTALL_LIBDIR}/qt5/plugins/yarock"  CACHE PATH "libraries installation path" FORCE)
+
+ install(TARGETS enginephonon DESTINATION ${CMAKE_INSTALL_LIB} )
