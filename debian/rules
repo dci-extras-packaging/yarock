@@ -9,7 +9,7 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
-	-DENABLE_QT5=1 -DENABLE_VLC=ON -DENABLE_MPV=OFF -DENABLE_PHONON=ON
+	-DENABLE_QT5=1 -DENABLE_VLC=OFF -DENABLE_MPV=OFF -DENABLE_PHONON=ON
 
 override_dh_auto_install:
 	dh_auto_install
